@@ -51,20 +51,22 @@ def main():
     ap.add_argument("--seed", type=int, default=123)   # same protocol as ACT eval
     ap.add_argument("--randomize", type=str, default="none",
                     choices=["none", "visual", "physics", "full"])
+    ap.add_argument("--repo", type=str, default=REPO_ID,
+                    help="policy repo (e.g. lerobot/smolvla_base for the zero-shot 'before')")
     args = ap.parse_args()
 
     from lerobot.policies import make_pre_post_processors
     from lerobot.policies.smolvla.modeling_smolvla import SmolVLAPolicy
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    policy = SmolVLAPolicy.from_pretrained(REPO_ID)
+    policy = SmolVLAPolicy.from_pretrained(args.repo)
     policy.to(device).eval()
     preprocessor, postprocessor = make_pre_post_processors(
         policy_cfg=policy.config,
-        pretrained_path=REPO_ID,
+        pretrained_path=args.repo,
         preprocessor_overrides={"device_processor": {"device": str(device)}},
     )
-    print(f"loaded {REPO_ID} on {device}")
+    print(f"loaded {args.repo} on {device}")
     print(f'task: "{TASK}"')
 
     env = PickPlaceEnv(seed=args.seed, randomize=args.randomize)
