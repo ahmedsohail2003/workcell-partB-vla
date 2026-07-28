@@ -1,4 +1,12 @@
-# TalkToTheCell — language-conditioned manipulation with SmolVLA
+# WorkCell Part B — TalkToTheCell: language-conditioned manipulation with SmolVLA
+
+> **Part B of the _WorkCell_ series** — one simulated industrial work-cell, five learning approaches:
+> [A · imitation](https://github.com/ahmedsohail2003/workcell-partA-imitation) ·
+> [B · VLA](https://github.com/ahmedsohail2003/workcell-partB-vla) ·
+> [C · grasping](https://github.com/ahmedsohail2003/workcell-partC-grasping) ·
+> [D · RL + world model](https://github.com/ahmedsohail2003/workcell-partD-rl) ·
+> E · ROS 2 (in progress) ·
+> [datasets & models on 🤗](https://huggingface.co/ahmedsohail2003)
 
 **Project B of the Sim2Cell portfolio:** fine-tune **SmolVLA (450M)**, a
 vision-language-action model, on the author's own
@@ -8,7 +16,7 @@ executing *"Pick up the red block and place it in the blue tray."* — and
 compare it against the ACT baseline trained on the same data (65%, 75% with
 temporal ensembling).
 
-Where [sim2cell](../sim2cell) asks *"can a policy copy the expert from
+Where [Part A · Sim2Cell](https://github.com/ahmedsohail2003/workcell-partA-imitation) asks *"can a policy copy the expert from
 pixels?"*, this project asks *"can a **foundation model** be steered to the
 same task with natural language?"* — the paradigm industrial robotics is
 converging on for taskable, reconfigurable cells.
