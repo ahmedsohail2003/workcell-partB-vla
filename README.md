@@ -5,7 +5,7 @@
 > [B · VLA](https://github.com/ahmedsohail2003/workcell-partB-vla) ·
 > [C · grasping](https://github.com/ahmedsohail2003/workcell-partC-grasping) ·
 > [D · RL + world model](https://github.com/ahmedsohail2003/workcell-partD-rl) ·
-> E · ROS 2 (in progress) ·
+> [E · ROS 2](https://github.com/ahmedsohail2003/workcell-partE-ros2) ·
 > [datasets & models on 🤗](https://huggingface.co/ahmedsohail2003)
 
 **Project B of the Sim2Cell portfolio:** fine-tune **SmolVLA (450M)**, a
