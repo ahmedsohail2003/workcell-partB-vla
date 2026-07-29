@@ -6,7 +6,8 @@
 > [C · grasping](https://github.com/ahmedsohail2003/workcell-partC-grasping) ·
 > [D · RL + world model](https://github.com/ahmedsohail2003/workcell-partD-rl) ·
 > [E · ROS 2](https://github.com/ahmedsohail2003/workcell-partE-ros2) ·
-> [datasets & models on 🤗](https://huggingface.co/ahmedsohail2003)
+> [datasets & models on 🤗](https://huggingface.co/ahmedsohail2003) ·
+> **[🌐 portfolio overview](https://ahmedsohail2003.github.io/)** — the whole series on one page
 
 **Project B of the Sim2Cell portfolio:** fine-tune **SmolVLA (450M)**, a
 vision-language-action model, on the author's own
